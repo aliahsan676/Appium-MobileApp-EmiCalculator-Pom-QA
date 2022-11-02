@@ -89,7 +89,7 @@ public class CompareLoanPage extends EmiCalculatorBaseTest {
         return this;
     }
 
-    public CompareLoanPage tapBtnReset(){
+    public CompareLoanPage tapBtnReset() {
         btnReset.isDisplayed();
         btnReset.click();
         return this;

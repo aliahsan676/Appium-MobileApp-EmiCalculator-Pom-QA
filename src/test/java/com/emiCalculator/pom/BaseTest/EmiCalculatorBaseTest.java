@@ -11,7 +11,7 @@ import java.net.URL;
 import java.time.Duration;
 
 public class EmiCalculatorBaseTest {
-    protected AndroidDriver driver;
+    protected static AndroidDriver driver;
 
 
     @BeforeClass
