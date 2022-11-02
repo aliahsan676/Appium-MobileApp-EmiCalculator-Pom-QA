@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    testImplementation 'org.seleniumhq.selenium:selenium-java:4.5.0'
+
+    // https://mvnrepository.com/artifact/org.testng/testng
+    testImplementation group: 'org.testng', name: 'testng', version: '7.6.1'
+
+    testImplementation group: 'io.appium', name: 'java-client', version: '8.2.0'
+
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-support
+    testImplementation group: 'org.seleniumhq.selenium', name: 'selenium-support', version: '4.5.0'
+}
+
+test {
+    useTestNG()
+}
